@@ -12,8 +12,8 @@ app.use(express.static('css'));
 app.use(bodyparser.urlencoded({ extended: false }));
 app.listen(8080);
 
-let Task = require('./models/task');
-let Developer = require('./models/developer')
+let Task = require('./task');
+let Developer = require('./developer')
 
 let url = "mongodb://localhost:27017/week7lab"  
 
