@@ -34,11 +34,11 @@ mongoDBclient.connect(url,{useNewUrlParser: true},function(err,client){
 //Insert new User
 //GET request: send the page to the client
 app.get('/', function (req, res) {
-    res.sendFile(__dirname + '/views/index.html');
+    res.sendFile(__dirname + '/index.html');
 });
 
 app.get('/insertask', function (req, res) {
-    res.sendFile(__dirname + '/views/insert.html');
+    res.sendFile(__dirname + '/insert.html');
 });
 //POST request: receive the details from the client and insert new document (i.e. object) to the collection (i.e. table)
 app.post('/insertask', function (req, res) {
@@ -55,14 +55,14 @@ app.post('/insertask', function (req, res) {
 app.get('/getasks', function (req, res) {
     col.find({}).toArray(function (err, data) {
         console.log(data);
-        res.render(__dirname + '/views/getasks.html', { usersDb: data });
+        res.render(__dirname + '/getasks.html', { usersDb: data });
     });
 });
 
 //Update user: 
 //GET request: send the page to the client 
 app.get('/updatestatus', function (req, res) {
-    res.sendFile(__dirname + '/views/update.html');
+    res.sendFile(__dirname + '/update.html');
 });
 
 //POST request: receive the details from the client and do the update
@@ -77,7 +77,7 @@ app.post('/updatetaskstatus', function (req, res) {
 
 //GET request: send the page to the client to enter the user's name
 app.get('/deletebyID', function (req, res) {
-    res.sendFile(__dirname + '/views/deleteID.html');
+    res.sendFile(__dirname + '/deleteID.html');
 });
 //POST request: receive the user's name and do the delete operation 
 app.post('/deletetaskid', function (req, res) {
@@ -92,7 +92,7 @@ app.post('/deletetaskid', function (req, res) {
 
 
 app.get('/deletecomp', function (req, res) {
-    res.sendFile(__dirname + '/views/deletecomp.html');
+    res.sendFile(__dirname + '/deletecomp.html');
 });
 //POST request: receive the user's name and do the delete operation 
 app.post('/deleteallcomp', function (req, res) {
@@ -108,7 +108,7 @@ app.post('/deleteallcomp', function (req, res) {
 
 
 app.get('/insertMany', function (req, res) {
-    res.sendFile(__dirname + '/views/insertMany.html');
+    res.sendFile(__dirname + '/insertMany.html');
 });
 //POST request: receive the details from the client and insert new document (i.e. object) to the collection (i.e. table)
 app.post('/insertaskmany', function (req, res) {
