@@ -1,0 +1,36 @@
+<html>
+        <head>
+                <link rel="stylesheet" href="styles.css">
+        </head>
+<body>
+    <h1>Update Task</h1></br>
+    <h1>
+
+        <a href="/">Home</a>
+        <a href="/insertask">Insert New Task</a>
+        <a href="/getasks">Get All Tasks</a>
+        <a href="/deletebyID">Delete Task By ID</a>
+        <a href="/deletecomp">Delete All The Completed Tasks</a>
+        <a href="/addNewDeveloper">Add New Developer</a>
+        <a href="/getdeveloper">Get All Developers</a>
+        <a href="/sort">get the first 5 tasks in descending order</a>
+    </h1>
+
+    <form action="/updatetaskstatus" method="POST">
+
+        TaskID <input type="text" method="POST" name="taskId" /> </br>
+    
+        Task Status :  
+        <select class="statusNew" data-style = "btn-info" name = "statusNew" >
+            <optgroup label="select table">
+                <option value = "InProgress ">InProgress </option>
+                <option value = "Complete">Complete</option>
+            </optgroup>
+            
+        </select></br> 
+
+        <input type="submit" value="Submit" /> </br>
+    </form>
+</body>
+
+</html>

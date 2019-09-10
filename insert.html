@@ -1,0 +1,40 @@
+<html>
+<head>
+        <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <h1>Insert Tasks</h1> </br>
+    <h1> <a href="/">Home</a>
+        
+        <a href="/getasks">Get All Tasks</a>
+        <a href="/deletebyID">Delete Task By ID</a>
+        <a href="/deletecomp">Delete All The Completed Tasks</a>
+        <a href="/updatestatus">Update Task Status</a>
+        <a href="/addNewDeveloper">Add New Developer</a>
+        <a href="/getdeveloper">Get All Developers</a>
+        <a href="/sort">get the first 5 tasks in descending order</a>
+    </h1>
+    <form action="/insertask" method="POST">
+        
+        Task Name : 
+        <input type="text" name="taskName" /> </br>
+        Assign To : 
+        <input type="text" name="assignTo" /> </br>
+        Due Date :
+        <input type="date" name="dueDate" /> </br>
+        Task Status :  
+        <select class="taskStatus" data-style = "btn-info" name = "taskStatus" >
+            <optgroup label="select table">
+                <option value = "InProgress ">InProgress </option>
+                <option value = "Complete">Complete</option>
+            </optgroup>
+            
+        </select></br> 
+        Task Description : 
+        <input type="text" name="taskDesc" /> </br>
+        <button>Submit</button> 
+    </form>
+</body>
+                    
+</html>

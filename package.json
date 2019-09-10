@@ -1,0 +1,27 @@
+{
+  "name": "week7lab6",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.13"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vver0002/Week5.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vver0002/Week5/issues"
+  },
+  "homepage": "https://github.com/vver0002/Week5#readme",
+  "description": ""
+}
